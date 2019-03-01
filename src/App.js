@@ -4,19 +4,26 @@ import Header from './Header';
 import Search from './Search';
 import axios from 'axios';
 
-
-// const apiURL = "https://api.edamam.com/search";
 const apiKey = "4d616a3fe66b009185305fec33387408";
 const apiId = "0766a929";
 
+// const Results =(props)=>{
+//   return(
+//     <div>
+//       <h2>{props.label}</h2>
+//       <img src={props.image} alt={props.alt}>
+//       <a href={props.url}>{props.url}</a>
+//     </div>
+//   )
+//  }
 
 class App extends Component {
 constructor(){
   super();
   this.state ={
+    recipes: [],
     userInput: '',
     userName: 'Julie'
-
   }
 }
   
@@ -70,26 +77,45 @@ handleSubmit =(event) => {
     response = response.data.hits
     console.log(response)
     this.setState({
-     recipes: response
+     recipes: response,
+     userInput: ""
  })
 })
 }
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
         <main>
           {/* <Search name={this.state.userName} onClick={this.handleSubmit} change={this.handleChange}/>  */}
-        
           <section className="App-form">
             <h1>{this.props.name}</h1>
                 <form onSubmit={this.handleSubmit}>
                     <label htmlFor="search">Enter your main ingredient</label>
-                    <input type="text" id="search" placeholder="i.e. chicken" required onChange={this.handleChange} value={this.state.userIput}/>
+                    <input type="text" id="search" placeholder="i.e. chicken" required onChange={this.handleChange} value={this.state.userInput}/>
                     <input type="submit" value="submit" />
                 </form>
             </section> 
+
+            <section className="App-results">
+                <div className="App-gallery">
+                  {this.state.recipes.map((results, index) =>{
+                    return(
+                      <div key={index}>
+                        <h2>{results.recipe.label}</h2>
+                        <img src={results.recipe.image} alt={results.recipe.label} />
+                        <a href={results.recipe.url}>{results.recipe.url}</a>
+                      </div>
+                    )  
+         })
+         }
+
+                </div>
+            
+            
+            </section>
+        
         </main>
         
       </div>

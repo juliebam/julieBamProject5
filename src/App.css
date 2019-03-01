@@ -1,5 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Open+Sans');
+
 html {
   font-size: 62.5%;
+  --bg-color: #fffffb;
+  --secondary-color: #1a1a1a;
+
+  --primary-font: 'Montserrat Alternates', sans-serif;
+  --secondary-font:  'Open Sans', sans-serif;
 }
 
 body {

@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Open+Sans');
+
+
+header {
+        background: var(--bg-color);
+        height: 50vh;
+    }
+
+header h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--secondary-color);
+}
+

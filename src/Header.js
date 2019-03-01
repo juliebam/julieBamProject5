@@ -4,7 +4,7 @@ class Header extends Component {
     render(){
         return(
             <header className="App-header">
-                <h1>Low carb recipe finder</h1>
+                <h1>low carb</h1>
             </header>      
         )
     }
