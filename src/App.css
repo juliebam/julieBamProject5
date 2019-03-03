@@ -5,6 +5,7 @@ html {
   font-size: 62.5%;
   --bg-color: #fffffb;
   --secondary-color: #1a1a1a;
+  --accent: #de692a;
 
   --primary-font: 'Montserrat Alternates', sans-serif;
   --secondary-font:  'Open Sans', sans-serif;
@@ -12,6 +13,7 @@ html {
 
 body {
   font-size: 1.8rem;
+  background: var(--bg-color);
 }
 
 .wrapper {
@@ -22,4 +24,8 @@ body {
 img {
   max-width: 100%;
   display: block;  
+}
+
+.App-main {
+  background: red;
 }

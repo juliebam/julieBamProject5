@@ -1,0 +1,77 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700i|Montserrat+Alternates:400,500,700');
+
+.App-header {
+    display: flex;
+    padding: 0 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4.0rem;
+    color: var(--bg-color);
+    height: 60vh;
+    background: linear-gradient(0deg,rgba(56, 51, 54, 0.5),rgba(50, 47, 49, 0.5)),url('../assets/heroImage.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    transition: height 0.5s ease-in-out;
+
+}
+
+.App-header h1 {
+    width: 50%;
+}
+
+.App-header h1  {
+    text-align: center;
+    font-weight: 500;
+}
+
+.hide {
+    height: 0;
+}
+
+.show {
+   height: 60vh;
+}
+
+@media (max-width: 950px) {
+    .App-header {
+        font-size: 3.0rem;
+    }
+
+    .App-header h1 {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 780px) {
+    .App-header {
+        font-size: 2.5rem;
+    }
+    .App-header h1 {
+        padding-top: 15%;
+    }
+    
+}
+
+@media (max-width: 680px)  {
+    .App-header {
+        font-size: 2.0rem;
+    }
+
+    .App-header h1 {
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 590px) {
+    .App-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .App-header h1 {
+        padding-top: 0;        
+    }
+}

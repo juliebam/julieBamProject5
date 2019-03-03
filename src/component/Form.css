@@ -1,0 +1,57 @@
+.Search {
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search label {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4.0rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 50px 0 25px 0;
+}
+
+.Search-input {
+    width: 80%;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.Submit {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    box-shadow: 10px 10px 5px 0px #e0d3e0;
+    transition: 0.2s linear;
+}
+
+.Submit:active {
+    box-shadow: 5px 5px 5px 0px #e0d3e0;
+    background-color: #854D2D;
+}
+
+@media (max-width: 780px) {
+    .Search label{
+        font-size: 3.0rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .Search {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .Search label {
+        font-size: 2.0rem;
+    }
+}

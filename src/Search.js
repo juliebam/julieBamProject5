@@ -4,9 +4,14 @@ class Search extends Component {
     handleChange = (event) => {
         console.log(event.target.value)
       }
+
+    handleSubmit = (event, ) => {
+
+    }
       
     render(props){
         return(
+            
             <section className="App-form">
             <h1>{this.props.name}</h1>
                 <form onSubmit={this.props.onClick}>
