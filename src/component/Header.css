@@ -72,6 +72,12 @@
     }
 
     .App-header h1 {
-        padding-top: 0;        
+        padding-top: 0;    
+    }
+}
+
+@media (max-width: 560px) {
+    .App-header h1 {
+        text-align: left;       
     }
 }

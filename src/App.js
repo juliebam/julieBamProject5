@@ -47,7 +47,7 @@ handleSubmit =(event) => {
     response = response.data.hits
     console.log(response)
     if (response.length === 0) {
-      alert('Error')
+      alert('Please try again')
     }
     this.setState({
      recipes: response,

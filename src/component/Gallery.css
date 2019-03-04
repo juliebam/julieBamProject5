@@ -28,6 +28,10 @@
     background-color: #854D2D;
 }
 
+.Recipe-card a:focus {
+    box-shadow: 1px 1px 7px 6px rgba(168,168,168,1);
+}
+
 .Recipe-card img {
     margin-top: 10%;
 }
